@@ -1,0 +1,18 @@
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, detail TEXT, item TEXT, price INTEGER, department INTEGER);
+
+INSERT INTO clothing_store VALUES(1, "Women's", "Tops", 35, 1);
+INSERT INTO clothing_store VALUES(2, "Women's", "Bottoms", 75, 1);
+INSERT INTO clothing_store VALUES(3, "Women's", "Bras", 25, 1);
+INSERT INTO clothing_store VALUES(4, "Women's", "Underwear", 8, 1);
+INSERT INTO clothing_store VALUES(5, "Women's", "Socks", 10, 1);
+INSERT INTO clothing_store VALUES(6, "Women's", "Shoes", 50, 1);
+INSERT INTO clothing_store VALUES(7, "Men's", "Tops", 30, 2);
+INSERT INTO clothing_store VALUES(8, "Men's", "Bottoms", 65, 2);
+INSERT INTO clothing_store VALUES(9, "Men's", "Hats", 15, 2);
+INSERT INTO clothing_store VALUES(10, "Men's", "Underwear", 8, 2);
+INSERT INTO clothing_store VALUES(11, "Men's", "Socks", 10, 2);
+INSERT INTO clothing_store VALUES(12, "Men's", "Shoes", 50, 2);
+INSERT INTO clothing_store VALUES(13, "Children's", "Tops", 10, 3);
+INSERT INTO clothing_store VALUES(14, "Children's", "Bottoms", 15, 3);
+INSERT INTO clothing_store VALUES(15, "Children's", "Accesories", 5, 3);
+SELECT detail, item, price FROM clothing_store ORDER BY price;
